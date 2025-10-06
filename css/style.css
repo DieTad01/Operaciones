@@ -1,0 +1,93 @@
+header h1{
+    text-align: center;
+    font-family: Courier;
+    font-size: 40px;
+}
+
+hr{
+    border: 2px solid black;
+    width: 90%;
+}
+
+/*Base de colores*/
+body{
+    background-color:beige;
+    margin: 0; /*Para no tener margen en la pagina*/
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/*Texto de introducción*/
+section p{
+    width: 100%;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 18px;
+}
+
+/*Metodos*/
+/*Metodos generales*/
+.MetGen{
+    text-align: center;
+}
+
+.MetGen h1{
+    font-family: Courier;
+    font-size: 26px;
+}
+
+.MetGen p{
+    font-family: Verdana;
+    font-size: 16px;
+}
+
+.MetGen a{
+    text-decoration: none; /*Quita el subrayado*/
+    color: #8750ac;
+    font-family: Monospace;
+    font-size: 18px;
+}
+
+/*Metodos de transporte*/
+.MetEsp{
+    text-align: center;
+}
+
+.MetEsp h1{
+    font-family: Courier;
+    font-size: 26px;
+}
+
+.MetEsp p{
+    font-family: Verdana;
+    font-size: 16px;
+}
+
+.MetEsp a{
+    text-decoration: none; /*Quita el subrayado*/
+    color: #8750ac;
+    font-family: Monospace;
+    font-size: 20px;
+}
+
+/*Final*/
+footer{
+    background-color: #b8b769;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+    margin-top: auto;
+    bottom: 0;
+}
+
+footer h1{
+    font-size: 28px;
+    font-family: Optima;
+}
+
+footer h2{
+    font-size: 20px;
+    font-family: Optima;
+}
