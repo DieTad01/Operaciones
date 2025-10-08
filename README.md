@@ -22,10 +22,10 @@ open index.html
 
 ## Comprobaciones
 - Método grafico:
-  - x: 3
-  - y: 5
-  - x + y ≥ 10
-    x ≤ 6
-    y ≤ 7
-    2x + 3y ≥ 18
+  - x: 30
+  - y: 50
+  - x + 3y ≤ 200
+    x + y ≤ 100
+    x ≥ 20
+    y ≥ 10
   Es para comprobar que todo funcione
