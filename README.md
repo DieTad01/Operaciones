@@ -10,6 +10,9 @@ Es un sitio web donde pueden aprender sobre metodos de investigación de operaci
 - Metodos con html, css, js (Para los metodos, calculos)
 
 ## Instalación
+Documentación de js
+- npm install -g jsdoc (Instalación global)
+- npm install --save-dev jsdoc (Local en el proyecto)
 
 ## Conar el repositorio
 git clone "ruta"
