@@ -1,0 +1,304 @@
+header h1{
+    text-align: center;
+    font-family: Courier;
+    font-size: 40px;
+}
+
+/*Esto me ayudo la ia*/
+/*Pero lo edite yo*/
+/* Estilos del menú horizontal */
+.menu-horizontal {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto 40px;
+    width: fit-content;
+    overflow: visible;
+    position: relative;
+    z-index: 1000;
+}
+
+.menu-horizontal > li {
+    position: relative;
+    border-right: 1px solid #000000;
+}
+
+.menu-horizontal > li:last-child {
+    border-right: none;
+}
+
+.menu-horizontal a {
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #34495e;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.menu-horizontal > li > a {
+    background-color: #5faedc /*Color de las celdas*/;
+    font-family: Courier;
+    font-size: 18px;
+}
+
+.menu-horizontal a:hover {
+    background-color: #b19434;
+    color: white;
+}
+
+/* Submenús*/
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #5faedc; /*Color de las celdas*/
+    list-style: none;
+    min-width: 200px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 5px 5px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1001;
+    font-family: Courier;
+    padding: 0;
+}
+
+.menu-horizontal li:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.submenu li {
+    border-bottom: 1px solid #000000;
+}
+
+.submenu li:last-child {
+    border-bottom: none;
+}
+
+.submenu a {
+    padding: 12px 20px;
+    font-size: 14px;
+    list-style: none;
+    font-weight: bold;
+}
+
+.submenu a:hover {
+    background-color: #b19434;
+}
+
+/* Indicador de submenú */
+.has-submenu > a::after {
+    content: " ▼";
+    font-size: 0.7em;
+    margin-left: 5px;
+}
+
+
+/*Extra*/
+hr{
+    border: 2px solid black;
+    width: 90%;
+}
+
+/*Base de colores*/
+body{
+    background-color:beige;
+    margin: 0; /*Para no tener margen en la pagina*/
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+/*Texto de introducción*/
+section p{
+    width: 90%;
+    margin: 0 auto; /*Centrar un div*/
+    text-align: center;
+    font-family: Verdana;
+    font-size: 18px;
+}
+
+/*Final*/
+footer{
+    background-color: #ccb25c;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+    margin-top: auto;
+    bottom: 0;
+}
+
+footer h1{
+    font-size: 28px;
+    font-family: Optima;
+}
+
+footer h2{
+    font-size: 20px;
+    font-family: Optima;
+}
+
+/*Variables*/
+.wrap{
+    max-width: 1100vh;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+.card{
+    background: #5faedc;
+    border: 1px solid #3b3bb1;
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-bottom: 16px;
+}
+
+h2{
+    margin: 12px 0;
+    font-size: 18px;
+    font-family: Verdana;
+}
+
+h3{
+    font-size: 13px;
+    font-family: Verdana;
+}
+
+label{
+    font-weight: 800;
+    display: block;
+    margin: 12px 0 6px;
+    font-family: Verdana;
+}
+
+input, textarea{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+textarea{
+    min-height: 100px;
+}
+
+.btn{
+    background: #111827;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+.btn:disabled{
+    opacity: .6;
+    cursor: not-allowed;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+th, td{
+    border: 1px solid #e5e7eb;
+    padding: 8px;
+    text-align:center;
+    font-family: Verdana;
+}
+
+th{
+    background:#f3f4f6;
+}
+
+.mono{
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.ok{
+    color:#0b8b2b;
+    font-weight: 700;
+}
+
+.bad{
+    color:#b91c1c;
+    font-weight: 700;
+}
+
+canvas{
+    width: 100%;
+    height: 450px;
+    border: 1px solid #e6e6ea;
+    border-radius: 12px;
+    background:#fff;
+}
+
+/*Extras editados*/
+.notas{
+    background: #5faedc;
+    border: 1px solid #3b3bb1;
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-bottom: 16px;
+    width: 50%;
+    margin: 0 auto; /*Centrar un div*/
+}
+
+.notas ul li{
+    font-family: Verdana;
+}
+
+.datos{
+    background: #5faedc;
+    border: 1px solid #3b3bb1;
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-bottom: 16px;
+    width: 50%;
+    margin: 0 auto; /*Centrar un div*/
+}
+
+.row{
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto; /*Centrar un div*/
+    width: 90%;
+}
+
+.botones{
+    align-items: center;
+    margin: 0 auto; /*Centrar un div*/
+}
+
+.datosimp{
+    background:#5faedc;
+    border: 1px solid #3b3bb1;
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-bottom: 16px;
+    width: 90%;
+    margin: 0 auto; /*Centrar un div*/
+}
+
+.grid{
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto; /*Centrar un div*/
+}

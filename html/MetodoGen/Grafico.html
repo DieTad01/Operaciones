@@ -3,19 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/style2.css">
+    <link rel="stylesheet" href="../../css/stylegrafico.css">
     <title>Método Grafico</title>
 </head>
 <body>
     <header>
         <h1>Método Grafico</h1>
+
+        <ul class="menu-horizontal">
+            <li><a href="../../index.html">Menú principal</a></li>
+            <li class="has-submenu">
+                <a href="#">Métodos Generales</a>
+                <ul class="submenu">
+                    <li><a href="../MetodoGen/Grafico.html">Método Gráfico</a></li>
+                    <li><a href="../MetodoGen/Simplex.html">Método Simplex</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="#">Métodos Transporte</a>
+                <ul class="submenu">
+                    <li><a href="../MetodoEsp/CostoMinimo.html">Método Costo Mínimo</a></li>
+                    <li><a href="../MetodoEsp/Noroeste.html">Método de Esquina Noroeste</a></li>
+                    <li><a href="../MetodoEsp/Vogel.html">Método de Vogel</a></li>
+                </ul>
+            </li>
+        </ul>
+    </ul>
     </header>
 
+    <!-- 1. Meta -->
     <section>
         <p>
-            
+            El método gráfico es una herramienta clave en la investigación de operaciones
+            que permite representar gráficamente problemas de programación lineal.
+            Se utiliza principalmente para problemas que involucran dos variables de decisión,
+            facilitando la visualización de las restricciones y la función objetivo. Este método
+            ayuda a encontrar la región factible, que es el conjunto de soluciones que cumplen con
+            todas las restricciones del problema.
         </p>
-    </section>
+    </section><br><hr><br>
+
+    <!-- 2. Datos -->
+    <div class="datosimp">
+      <div class="grid">
+        <div>
+          <center><h2>Función objetivo</h2></center>
+          <center><label>Coeficientes (x, y)</label></center>
+          <div class="grid">
+            <input id="c1txt" type="number" step="any" value="" placeholder="x">
+            <input id="c2txt" type="number" step="any" value="" placeholder="y">
+          </div>
+        </div>
+
+        <div>
+          <center><h2>Restricciones</h2></center>
+          <center><label>Escribe una por línea. Formatos aceptados:</label></center>
+          <center>
+            <h3>2x + 3y ≤ 18</h3>
+            <h3>-1x + 2y ≥ 4</h3>
+            <h3>1y ≤ 7</h3>
+            <h3>5x ≤ 10</h3>
+            <h3>Se aplican automáticamente las de no negatividad</h3>
+          </center>
+        </div>
+      </div>
+
+      <center><textarea id="constraints"></textarea></center><br>
+
+      <center><div class="botones" style="flex: 1 1 10%">
+        <button class="btn" id="solveBtn">Resolver y graficar</button>
+        <button class="btn" id="exampleBtn" style="background:#2563eb">Cargar ejemplo</button>
+        <div id="status"></div>
+      </div></center>
+    </div><br>
+
+    <!-- 3. Calculos (Estan en el js) -->
+
+    <!-- 4. Display -->
+    <div class="row">
+      <div class="card" style="flex:1 1 10%">
+        <center><h2>Gráfica</h2></center>
+        <canvas id="plot" width="700" height="350"></canvas>
+      </div>
+
+      <div class="card" style="flex:1 1 10%">
+        <center><h2>Vértices factibles y óptimo</h2></center>
+        <div id="solutionBox"></div>
+      </div>
+    </div>
+
+    <div class="notas">
+      <center><h2>Notas</h2></center>
+      <ul>
+        <li>Soporta restricciones con ≤, &lt;=, ≥, &gt;= y = (internamente maneja iguales como dos desigualdades).</li>
+        <li>Siempre se incluye <span class="mono">x ≥ 0</span> y <span class="mono">y ≥ 0</span>.</li>
+        <li>El óptimo se busca evaluando la función objetivo en todos los vértices de la región factible.</li>
+      </ul>
+    </div>
+  </div><br>
+  
+    <!-- 5. Navegabilidad (Es toda la página web) -->
+
+  <script src="../../js/grafico.js"></script>
     
+    <footer>
+        <h1>Autor:</h1>
+        <h2>Pérez Hernández Diego Tadeo</h2>
+    </footer>
 </body>
 </html>

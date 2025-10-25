@@ -20,17 +20,33 @@ body{
 }
 
 /*Texto de introducción*/
+section{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 section p{
-    width: 100%;
-    text-align: center;
+    width: 60%;
+    text-align: justify;
     font-family: Verdana;
     font-size: 18px;
+}
+
+section img{
+    width: 20%;
+    max-width: 300px;
+    border-radius: 10px;
 }
 
 /*Metodos*/
 /*Metodos generales*/
 .MetGen{
     text-align: center;
+    width: 100%;
 }
 
 .MetGen h1{
@@ -41,6 +57,8 @@ section p{
 .MetGen p{
     font-family: Verdana;
     font-size: 16px;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .MetGen a{
@@ -53,6 +71,7 @@ section p{
 /*Metodos de transporte*/
 .MetEsp{
     text-align: center;
+    width: 100%;
 }
 
 .MetEsp h1{
@@ -63,6 +82,8 @@ section p{
 .MetEsp p{
     font-family: Verdana;
     font-size: 16px;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .MetEsp a{
@@ -72,9 +93,34 @@ section p{
     font-size: 20px;
 }
 
+/*Planeacion*/
+.Planeacion{
+    text-align: center;
+    width: 100%;
+}
+
+.Planeacion h1{
+    font-family: Courier;
+    font-size: 26px;
+}
+
+.Planeacion p{
+    font-family: Verdana;
+    font-size: 16px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.Planeacion a{
+    text-decoration: none; /*Quita el subrayado*/
+    color: #8750ac;
+    font-family: Monospace;
+    font-size: 20px;
+}
+
 /*Final*/
 footer{
-    background-color: #b8b769;
+    background-color: #b19434;
     color: #fff;
     text-align: center;
     padding: 1px 0;
